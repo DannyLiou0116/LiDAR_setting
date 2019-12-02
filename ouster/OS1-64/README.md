@@ -7,7 +7,8 @@
 電腦ip設定
 ----------
 
-藉由ouster studio去偵測此時OS1-64的id
+藉由ouster studio去偵測此時OS1-64的id  
+注意每台ip當然不同
 目前是用
 1. address: 169.254.117.100
 2. mask: 255.255.255.0
