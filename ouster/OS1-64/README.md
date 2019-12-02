@@ -9,9 +9,9 @@
 
 藉由ouster studio去偵測此時OS1-64的id
 目前是用
-  (1)address: 169.254.117.100
-  (2)mask: 255.255.255.0
-  (3)gateway: 169.254.117.254
+1. address: 169.254.117.100
+2.  mask: 255.255.255.0
+3.  gateway: 169.254.117.254
   
   
 launch file的更動
@@ -32,3 +32,20 @@ replay的default維持false，之後要播放再在roslaunch指令後加上repla
   `rosbag record /os1_node/imu_packets /os1_node/lidar_packets`  
   
   (2)注意你錄影結束後要按ctrl+c才會中止，檔案也才會由active轉回bag
+  
+播放bag file 
+----------
+  用rviz確認錄製的檔案是否正確 
+  ###
+  (1)注意以下環境都需要是：
+    <1>
+    <2>
+  (2)開啟teminal 1: 
+    ```
+    cd ~/myworkspace/src/ouster_example/ouster_ros
+    roslaunch os1.launch replay:=true
+    ```
+  (3)再開一個terminal 2: 
+    ```
+    
+    ```
