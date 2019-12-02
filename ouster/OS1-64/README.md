@@ -1,8 +1,6 @@
 # OS1-64
 
-**先裝好ouster_example**
-
-https://github.com/ouster-lidar/ouster_example
+**先裝好ouster_example: **  https://github.com/ouster-lidar/ouster_example
 
 注意ouster_example不能clone在myworkspace/src底下，不然在symbolic link時會陷入無限迴圈，個人是放在home底下即可
 
