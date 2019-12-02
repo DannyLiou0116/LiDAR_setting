@@ -39,7 +39,7 @@ replay的default維持false，之後要播放再在roslaunch指令後加上repla
 用rviz確認錄製的檔案是否正確 
 ###
 1. 注意以下環境都需要是：  
-...1. python2環境，個人是使用`source activate py2`  
+1. python2環境，個人是使用`source activate py2`  
     2. `source /opt/ros/kinetic/setup.bash`  
       3. `source /home/doggy/myworkspace/devel/setup.bash`  
     
