@@ -43,14 +43,18 @@ replay的default維持false，之後要播放再在roslaunch指令後加上repla
     <2>`source /opt/ros/kinetic/setup.bash`  
     <3>`source /home/doggy/myworkspace/devel/setup.bash`  
   (2)開啟teminal 1: 
+  
     ```
     cd ~/myworkspace/src/ouster_example/ouster_ros
     roslaunch os1.launch replay:=true
     ```
+    
   (3)再開一個terminal 2: 
+  
     ```
     rviz
     ```
+    
   (4)再開一個terminal 3: 
     ```
     rosbag play *.bag --clock
