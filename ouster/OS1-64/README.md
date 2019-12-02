@@ -7,7 +7,7 @@ https://github.com/ouster-lidar/ouster_example
 注意ouster_example不能clone在myworkspace/src底下，不然在symbolic link時會陷入無限迴圈，個人是放在home底下即可
 
 電腦ip設定
-==========
+----------
 
 藉由ouster studio去偵測此時OS1-64的id
 目前是用
@@ -27,7 +27,7 @@ replay的default維持false，之後要播放再在roslaunch指令後加上repla
    
 
 錄製自己的bag file 
-#########
+----------
 
   (1)在你想要存放bag file的地方輸入：
   
