@@ -27,7 +27,7 @@ replay的default維持false，之後要播放再在roslaunch指令後加上repla
    
 
 錄製自己的bag file 
-###
+#########
 
   (1)在你想要存放bag file的地方輸入：
   
