@@ -107,7 +107,7 @@ rosrun pcl_ros pointcloud_to_pcd input:=/velodyne_cloud_registered
 
 輸入結束後別關掉  
 此 terminal 目的是存放等等跑出來的pcd檔案們  
-等等
+等等rosbag play之後，此 terminal 就會開始產生許多pcd
 
 4. 在.bag檔的路徑下開啟終端3，並於終端3依序輸入：
 
@@ -116,13 +116,16 @@ source activate py2
 source /opt/ros/kinetic/setup.bash
 rosbag play *.bag --clock /os1_cloud_node/points:=/os1_node/points
 ```
-   1. *.bag 是要你在.bag檔路徑底下輸入自己的.bag檔名，但pcd會儲存終端2的路徑底下
-   2. 如果.bag檔案一開始就放在空資料夾內，因為資料夾的bag檔只有一個所以維持*.bag即可
+
+bag 是要你在.bag檔路徑底下輸入自己的.bag檔名，但pcd會儲存終端2的路徑底下
+
+如果.bag檔案一開始就放在空資料夾內，因為資料夾的bag檔只有一個所以維持*.bag即可
 
 連結所有loam過後的pcd
 ---
-1. pcd全儲存完畢後，開啟一路徑在pcd存放資料夾的terminal 4
-2. 於終端4輸入：pcl_concatenate_points_pcd *.pcd，得到地圖 點雲output.pcd。
+
+1. pcd全儲存完畢後，開啟一路徑在pcd存放資料夾的terminal 4  
+2. 於終端4輸入：pcl_concatenate_points_pcd *.pcd，得到地圖 點雲output.pcd。  
 
 下載CloudCompare(Ubuntu16.04可一行指令就下載完畢)
 ---
