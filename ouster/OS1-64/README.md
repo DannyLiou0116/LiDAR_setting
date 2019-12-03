@@ -43,7 +43,7 @@ replay的default維持false，之後要播放再在roslaunch指令後加上repla
    2. `source /opt/ros/kinetic/setup.bash`  
    3. `source /home/doggy/myworkspace/devel/setup.bash`  
    
-2. 開啟teminal 1:  
+2. 開啟teminal 1:  可看出前面說的，需要播放時再補上
 ```
 cd ~/myworkspace/src/ouster_example/ouster_ros
 roslaunch os1.launch replay:=true
